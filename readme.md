@@ -17,7 +17,7 @@ Copy the values from the example.env file to a new .env file in the same directo
 
 CD into the searchengine folder that contains the manage.py
 
-Run ```bash python manage.py runserver```
+Run ```python manage.py runserver```
 
 This will take approximately 2 minutes on the initial run depending on your network/signal strength. The process of downloading a vital package [nltk_punkt](https://www.nltk.org/_modules/nltk/tokenize/punkt.html) is run once at the beginning of this process. Subsequent server runs on the same system will not require this process.
 
