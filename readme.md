@@ -19,7 +19,7 @@ CD into the searchengine folder that contains the manage.py
 
 Run ```python manage.py runserver```
 
-This will take approximately 2 minutes on the initial run depending on your network/signal strength. The process of downloading a vital package [nltk_punkt](https://www.nltk.org/_modules/nltk/tokenize/punkt.html) is run once at the beginning of this process. Subsequent server runs on the same system will not require this process.
+This will take approximately 30 seconds - 1 minute on the initial run depending on your network/signal strength. The process of downloading a vital package [nltk_punkt](https://www.nltk.org/_modules/nltk/tokenize/punkt.html) is run once at the beginning of this process. Subsequent server runs on the same system will not require this process.
 
 Visit [Search](http://127.0.0.1:8000) to run a search query.
 
