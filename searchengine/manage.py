@@ -23,6 +23,7 @@ def main():
 def download_punkt():
     print("Checking/Downloading Punkt File for Filtering in system.")
     nltk.download('punkt')
+    nltk.download('stopwords')
 
 if __name__ == '__main__':
     main()
