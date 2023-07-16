@@ -1,0 +1,6 @@
+venv/
+.env
+*__pycache__
+searchengine/searchengine/logs/*
+
+!searchengine/searchengine/logs/.gitkeep

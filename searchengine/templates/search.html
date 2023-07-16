@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block title %}
+
+  AFEX Search Engine
+
+{% endblock title %}
+
+
+{% block content %}
+
+    
+    <div class="container">
+        <div class="container text-center inner-div pb-2 mb-3 mt-4">
+            <h2>AFEX SEARCH</h2>
+            <form method="POST" action="/search/" class="mb-4 mx-4 py-3">
+                {% csrf_token %}
+                {% render_field form.query class="form-control" %}
+                <input class="btn btn-info save my-4 form-control" type="submit" name="save">
+            </form>
+            <a href="/index" class="btn btn-secondary">Index</a>
+            {% if documents|length == 0 %}
+                <p>No Documents found...</p>
+            {% else %}
+                {% for document in documents %}
+                    <div class="container item-row pt-2 pb-1 mb-2">
+                        <p>{{document}}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock content %}

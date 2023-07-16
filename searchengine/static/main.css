@@ -1,0 +1,34 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.ulli {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-div{
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+}
+
+hr {
+    border-color:#999966;
+}
+
+.div-confirm{
+    width: 70%;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    height: 50%;
+}
+
+.messages{
+    padding: 3px;
+    background-color: red;
+}

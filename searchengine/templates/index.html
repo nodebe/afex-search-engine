@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+
+{% block title %}
+
+  AFEX Search Engine
+
+{% endblock title %}
+
+
+{% block content %}
+
+    
+    <div class="container">
+        <div class="container text-center inner-div pb-2 mb-3 mt-4">
+            <h2>AFEX INDEX</h2>
+            <form method="POST" action="/index/" class="mb-4 mx-4 py-3">
+                {% csrf_token %}
+                {% render_field form.document class="form-control" %}
+                <input class="btn btn-info save my-4 form-control" type="submit" name="save">
+            </form>
+            <a href="/" class="btn btn-secondary">Search</a>
+        </div>
+    </div>
+
+{% endblock content %}
