@@ -25,6 +25,10 @@ Visit [Search](http://127.0.0.1:8000) to run a search query.
 
 Visit [Index](http://127.0.0.1:8000/index) to save a document string to DB.
 
+## Process Flow of System
+
+View the process flow of the system here: [FLOW DIAGRAM](https://drive.google.com/file/d/1a2T4XBs2UsMybZ3VPajCYq0nueOZA6-T/view?usp=sharing)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
